@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+li{
+  list-style: none;
+}
+
 *{
   font-family: 'Open Sans', sans-serif;
 }
@@ -55,4 +59,46 @@ code {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
+}
+
+/* background */
+
+.bg-gray{
+  background: #ececec;
+}
+
+
+/* counter */
+
+.counter{
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  max-width: 18rem;
+  width: 100%;
+}
+
+.counter__input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 0;
+  background: #ffff;
+  width:45%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.counter__items{
+  display: flex;
+}
+
+/* pizza */
+
+.pizza{
+    max-width: 24%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 100%;
 }
