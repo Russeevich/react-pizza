@@ -8,8 +8,8 @@ import { CounterState } from './context/CounterState';
 function App() {
 
   const state = [
-    {name:'Пеперони', cost:127, count: 1},
-    {name:'BBQ', cost:257, count: 1}
+    {name:'Пеперони', cost:127},
+    {name:'BBQ', cost:257}
   ]
 
   return (
