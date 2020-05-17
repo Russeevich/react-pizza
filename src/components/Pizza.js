@@ -15,9 +15,14 @@ export const Pizza = ({items}) => {
     <div className="card pizza">
             <div className="card-body">
             <h5 className="card-title">{items.name}</h5>
-                <div className="d-flex justify-content-between">
-                    <div>Р {items.cost}</div>
-                    <button onClick={Click} className="btn btn-primary">Добавить</button>
+                <div className="d-flex flex-column">
+                    <div className="overflow-hidden">
+                        <img className="w-75" src={items.img} alt=""/>
+                    </div>
+                    <div className="d-flex justify-content-between">
+                        <div>Р {items.cost}</div>
+                        <button onClick={Click} className="btn btn-primary">Добавить</button>
+                    </div>
                 </div>
             </div>
     </div>

@@ -1,18 +1,12 @@
-import React,{useContext,useState, useEffect} from 'react'
+import React,{useContext} from 'react'
 import { CounterContext } from '../context/CounterContext'
 import { SmallListPizza } from './SmallListPizza';
 
 export const Counter = () => {
 
     const {state} = useContext(CounterContext)
-    const [value, setValue] = useState(0)
     
     //JSON.parse(localStorage.getItem('cost'))
-
-    useEffect(() => {
-        setValue(state.reduce((acc, item) =>  { return acc + item.cost},0))
-        // eslint-disable-next-line
-    }, [state])
     
     return (
         <div className="counter">
@@ -20,7 +14,7 @@ export const Counter = () => {
                     <div className="card-body text-dark bg-gray">
                         <div className="card-title counter__items">
                             <div className="counter__input">
-                                Р {value}
+                                Р {state.reduce((acc, item) =>  { return acc + item.cost},0)}
                             </div>   
                             <button className="counter__input bg-danger text-light">Мои заказы</button>  
                         </div>
