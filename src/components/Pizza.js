@@ -17,7 +17,7 @@ export const Pizza = ({items}) => {
             <h5 className="card-title">{items.name}</h5>
                 <div className="d-flex flex-column">
                     <div className="overflow-hidden">
-                        <img className="w-75" src={items.img} alt=""/>
+                        <img className="w-50" src={items.img} alt=""/>
                     </div>
                     <div className="d-flex justify-content-between">
                         <div>Р {items.cost}</div>
