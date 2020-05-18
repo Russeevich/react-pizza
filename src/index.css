@@ -103,3 +103,8 @@ li{
     width: 100%;
 }
 
+.pizza__cost{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}

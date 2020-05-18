@@ -9,8 +9,8 @@ function App() {
 
   const state = [
     {name:'Пеперони', cost:127, img:"https://www.timspizza.ru/upload/goods/24a710c84f.jpg"},
-    {name:'BBQ', cost:257},
-    {name:'Сырная', cost:350}
+    {name:'BBQ', cost:257, img:"https://timspizza.ru/upload/goods/9dc89275f9.jpg "},
+    {name:'Сырная', cost:350, img:"https://timspizza.ru/upload/goods/4ef1fe45c8.jpg"}
   ]
 
   return (

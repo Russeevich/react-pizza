@@ -20,8 +20,8 @@ export const Pizza = ({items}) => {
                         <img className="w-50" src={items.img} alt=""/>
                     </div>
                     <div className="d-flex justify-content-between">
-                        <div>Р {items.cost}</div>
-                        <button onClick={Click} className="btn btn-primary">Добавить</button>
+                        <div className="align-self-center pizza__cost">₽ {items.cost}.-</div>
+                        <button onClick={Click} className="btn btn-outline-danger">Добавить</button>
                     </div>
                 </div>
             </div>
